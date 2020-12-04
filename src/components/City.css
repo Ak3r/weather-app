@@ -1,0 +1,17 @@
+.city-card {
+    background-color: #5fafff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+}
+
+.main {
+    text-align: center;
+}

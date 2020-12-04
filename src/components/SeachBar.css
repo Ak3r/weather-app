@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form {
+    margin: 10px 0;
+    width: 33%;
+    border: 1px solid #e0e1e2;
+    border-radius: 5px;
+    padding: 10px;
+}
