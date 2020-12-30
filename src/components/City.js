@@ -1,9 +1,16 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './City.css'
 
 const City = (props) => {
-    const {name, weather, main} = props.weather
-    const [cities, setCities] = useState([])
+    const {name, weather, main, id} = props.weather
+
+    const removeCity = () => {
+        props.remove(id)
+    }
+
+    const updateCity = () => {
+        props.update(id)
+    }
 
     return(
         <div className='city-card'>
@@ -16,6 +23,9 @@ const City = (props) => {
             <p>Temperature: {Math.round(main.temp - 273.15)} C</p>
             <p>Feels like: {Math.round(main.feels_like - 273.15)} C</p>
             <p>Humidity: {main.humidity} %</p>
+            <button onClick={removeCity}>Delete</button>
+            <br/>
+            <button onClick={updateCity}>Update</button>
         </div>
     )
 }
